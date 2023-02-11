@@ -1,0 +1,29 @@
+ion-content{
+  //  --background: aqua!important;
+}
+ion-grid{
+    //background-color:palegoldenrod;
+    height: 100%;
+    ion-row{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+ion-input{
+    font-size: 14px;
+    text-transform: capitalize;
+    width: 100%;
+}
+ion-item{
+    margin-top: 1rem;
+    --background:#f5f5f3;
+    border-radius: 50px;
+    box-shadow: 1px 8px 8px 0px rgba(0,0,0,0.08);
+}
+img{
+    height: 200px;
+    width: 200px;
+}

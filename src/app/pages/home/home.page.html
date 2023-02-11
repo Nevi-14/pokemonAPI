@@ -1,5 +1,9 @@
 <ion-header class="ion-no-border"  >
   <ion-toolbar class="ion-text-center">
+    <ion-button slot="start" size="small" (click)="logOut()"  fill="clear" shape="round">
+      <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+      LogOut
+    </ion-button>
     <ion-title>
       Blank
     </ion-title>
@@ -26,6 +30,9 @@
               <img src="{{pokemon.url}}" alt="">
             </ion-avatar>
             <ion-label>{{pokemon.name}}</ion-label>
+            <p>
+              {{pokemon.info.type}}
+            </p>
           </ion-item>
         </ion-list>
 

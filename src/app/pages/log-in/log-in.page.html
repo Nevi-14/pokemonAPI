@@ -1,0 +1,34 @@
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+<ion-col size="12">
+  <ion-row>
+    <ion-col size="12" class="ion-text-center">
+      <img src="../assets/icons/login.svg" alt="">
+    </ion-col>
+    <ion-col size="12">
+      <ion-label>Email</ion-label>
+      <ion-item lines="none">
+        <ion-input [(ngModel)]="email" type="text" placeholder="Email"></ion-input>
+      </ion-item >
+            </ion-col>
+            <ion-col size="12">
+              <ion-label>Password</ion-label>
+              <ion-item lines="none">
+                <ion-input [(ngModel)]="password" type="password" placeholder="Password"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12">
+             <ion-button (click)="logIn()" expand="block" fill="solid" shape="round" class="ion-margin">
+            <ion-label slot="start"> Log Me In!..</ion-label>
+             <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+             </ion-button>
+            </ion-col>
+  </ion-row>
+</ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

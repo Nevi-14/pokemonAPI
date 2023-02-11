@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Charmander",
+        "url": "../assets/icons/charmander.png",
+        "info":{
+            "type":"fire",
+            "stength":"good"
+        }
+    },
+    {
+        "name": "Pikachu",
+        "url": "../assets/icons/pikachu.png",
+        "info":{
+            "type":"fire",
+            "stength":"good"
+        }
+    },
+    {
+        "name": "Bullbasaur",
+        "url": "../assets/icons/bullbasaur.png",
+        "info":{
+            "type":"fire",
+            "stength":"good"
+        }
+    }
+]
