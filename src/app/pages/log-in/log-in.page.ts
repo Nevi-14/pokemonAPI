@@ -27,7 +27,9 @@ this.loginService.user.password = this.password;
     if (this.loginService.user.email != null) {
       this.router.navigateByUrl('/home', { replaceUrl: true })
     } else {
-      this.alertService.presentMessageAlert('App Restriction', 'Incorrect Credentials', 'Please try again!....');
+ /**
+  *this.alertService.presentMessageAlert('App Restriction', 'Incorrect Credentials', 'Please try again!....');
+  */
       this.router.navigateByUrl('/log-in', { replaceUrl: true })
     }
 

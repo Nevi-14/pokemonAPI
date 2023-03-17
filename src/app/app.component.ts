@@ -17,10 +17,7 @@ public router:Router
   ) {}
 
   ngOnInit() {
-  if(!this.loginService.user.email){
-    this.alertService.presentMessageAlert('App Restriction', 'Log Back In', 'Please try again!....');
-    this.router.navigateByUrl('/log-in', {replaceUrl:true})
-  }
+
    
   }
 }

@@ -1,0 +1,22 @@
+ion-toolbar{
+   --background: #fff;
+   ion-icon {
+      color: #fff;
+   }
+}
+.margin-left {
+   margin-left: 0.5rem;
+}
+
+ion-avatar, img{
+    height: 4rem;
+    width: 4rem;
+ 
+}
+ion-item {
+   ion-label {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      text-transform: capitalize;
+    }
+}

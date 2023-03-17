@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'log-in',
     loadChildren: () => import('./pages/log-in/log-in.module').then( m => m.LogInPageModule)
+  },  {
+    path: 'pokemon-modal',
+    loadChildren: () => import('./pages/pokemon-modal/pokemon-modal.module').then( m => m.PokemonModalPageModule)
   },
+
 ];
 
 @NgModule({
