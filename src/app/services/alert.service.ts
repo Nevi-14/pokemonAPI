@@ -13,7 +13,6 @@ export class AlertService {
 
 
 async presentMessageAlert(header:string, subheader:string, message:string){
-
 const alert = await this.alertCtrl.create({
   header:header,
   subHeader:subheader,

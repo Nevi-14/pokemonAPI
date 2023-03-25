@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { IonModal, ModalController } from '@ionic/angular';
 import { OverlayEventDetail } from '@ionic/core/components';
 import { PokemonModalPage } from '../pokemon-modal/pokemon-modal.page';
+import { PokemonService } from 'src/app/services/pokemon.service';
 //interfas para definir los tipos de dato a recibir 
 interface pokeObject {
 name:string,
@@ -27,7 +28,8 @@ name: string | any = null;
   constructor(
     public router:Router,
    public alertService:AlertService, 
-   public modalCtrl: ModalController
+   public modalCtrl: ModalController,
+   public pokemonsService:PokemonService
   ) {}
 
   cancel(i:number) {
@@ -48,6 +50,11 @@ name: string | any = null;
   }
 
   ngOnInit() {
+    this.pokemonsService.syncGetPokemonToPromise().then( (pokemons:any) =>{
+      this.pokemonsService.pokemons = pokemons.results;
+      console.log('porkemons', pokemons)
+    })
+
   }
   logOut(){
     this.router.navigateByUrl('/log-in', {replaceUrl:true})
